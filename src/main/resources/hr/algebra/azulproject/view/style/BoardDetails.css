@@ -1,0 +1,77 @@
+
+#playerOneImage{
+    -fx-background-image: url('/images/PlayerOne.png');
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-position: relative;
+}
+
+#playerTwoImage{
+    -fx-background-image: url('/images/PlayerTwo.png');
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-position: relative;
+}
+
+
+/* playground fields decorated bellow */
+
+#playground04{
+    -fx-clip: true;
+    -fx-background-size: 100% 100%;
+    -fx-border-width: 1px;
+    -fx-border-color: #DEE19A;
+    -fx-border-style: solid;
+}
+
+#playground14, #playground13{
+    -fx-background-size: 100% 100%;
+    -fx-border-width: 1px;
+    -fx-border-color: #DEE19A;
+    -fx-border-style: solid;
+}
+
+#playground24, #playground23, #playground22{
+    -fx-background-size: 100% 100%;
+    -fx-border-width: 1px;
+    -fx-border-color: #DEE19A;
+    -fx-border-style: solid;
+}
+
+#playground34, #playground33, #playground32, #playground31{
+    -fx-background-size: 100% 100%;
+    -fx-border-width: 1px;
+    -fx-border-color: #DEE19A;
+    -fx-border-style: solid;
+}
+
+#playground44, #playground43, #playground42, #playground41, #playground40{
+    -fx-background-size: 100% 100%;
+    -fx-border-width: 1px;
+    -fx-border-color: #DEE19A;
+    -fx-border-style: solid;
+}
+
+#pTwoGround204, #pTwoGround214, #pTwoGround213, #pTwoGround224, #pTwoGround223, #pTwoGround222, #pTwoGround234, #pTwoGround233, #pTwoGround232,
+#pTwoGround231, #pTwoGround244, #pTwoGround243, #pTwoGround242, #pTwoGround241, #pTwoGround240{
+    -fx-background-size: 100% 100%;
+    -fx-border-width: 1px;
+    -fx-border-color: #DEE19A;
+    -fx-border-style: solid;
+}
+
+#factoryOne, #factoryTwo, #factoryThree, #factoryFour, #factoryFive{
+    -fx-background-image: url('/images/FactorySheet.png');
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-position: relative;
+}
+
+#playgroundPlayer2{
+    -fx-border-width: 0 0 0 3px;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+}

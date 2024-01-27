@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gameMoves>
+    <gameMove>
+        <tile>Red</tile>
+        <position>pTwoGround204</position>
+        <dateTime>20.01.2024. 18:52:00</dateTime>
+        <factoryTile>factoryFourBottomLeft</factoryTile>
+    </gameMove>
+    <gameMove>
+        <tile>Blue</tile>
+        <position>playground13</position>
+        <dateTime>20.01.2024. 18:52:10</dateTime>
+        <factoryTile>factoryOneTopRight</factoryTile>
+    </gameMove>
+    <gameMove>
+        <tile>Red</tile>
+        <position>playground24</position>
+        <dateTime>20.01.2024. 18:52:06</dateTime>
+        <factoryTile>factoryOneTopLeft</factoryTile>
+    </gameMove>
+    <gameMove>
+        <tile>Red</tile>
+        <position>pTwoGround233</position>
+        <dateTime>20.01.2024. 18:52:16</dateTime>
+        <factoryTile>factoryFiveBottomLeft</factoryTile>
+    </gameMove>
+    <gameMove>
+        <tile>Blue</tile>
+        <position>playground04</position>
+        <dateTime>20.01.2024. 18:51:58</dateTime>
+        <factoryTile>factoryOneBottomRight</factoryTile>
+    </gameMove>
+    <gameMove>
+        <tile>LBlue</tile>
+        <position>playground14</position>
+        <dateTime>20.01.2024. 18:52:02</dateTime>
+        <factoryTile>factoryOneBottomLeft</factoryTile>
+    </gameMove>
+    <gameMove>
+        <tile>Blue</tile>
+        <position>pTwoGround223</position>
+        <dateTime>20.01.2024. 18:52:12</dateTime>
+        <factoryTile>factoryFourTopLeft</factoryTile>
+    </gameMove>
+    <gameMove>
+        <tile>Red</tile>
+        <position>pTwoGround234</position>
+        <dateTime>20.01.2024. 18:52:07</dateTime>
+        <factoryTile>factoryFourTopRight</factoryTile>
+    </gameMove>
+    <gameMove>
+        <tile>LBlue</tile>
+        <position>pTwoGround214</position>
+        <dateTime>20.01.2024. 18:52:03</dateTime>
+        <factoryTile>factoryFourBottomRight</factoryTile>
+    </gameMove>
+    <gameMove>
+        <tile>LBlue</tile>
+        <position>playground24</position>
+        <dateTime>20.01.2024. 18:52:14</dateTime>
+        <factoryTile>factoryTwoBottomLeft</factoryTile>
+    </gameMove>
+</gameMoves>

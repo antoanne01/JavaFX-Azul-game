@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.algebra.azulproject.controller.BoardController">
+
+    <top>
+        <VBox fx:id="headerFactoryResults">
+            <HBox fx:id="factoryTiles" maxHeight="150.0" maxWidth="1.7976931348623157E308">
+                <children>
+                    <VBox fx:id="VBoxFactoryOneContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                        <Pane fx:id="factoryOne" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="140.0" prefWidth="210.0" stylesheets="@style/BoardDetails.css">
+                            <children>
+                                <HBox fx:id="factoryOneTopPart" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="210.0">
+                                    <children>
+                                        <Pane fx:id="factoryOneTopLeft" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                        <Pane fx:id="factoryOneTopRight" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="factoryOneBottomPart" layoutX="1.0" layoutY="70.0" maxHeight="70.0" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="209.0">
+                                    <children>
+                                        <Pane fx:id="factoryOneBottomLeft" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                        <Pane fx:id="factoryOneBottomRight" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets left="45.0" top="5.0" />
+                            </VBox.margin>
+                        </Pane>
+                        <HBox.margin>
+                            <Insets bottom="4.0" />
+                        </HBox.margin>
+                    </VBox>
+
+                    <VBox fx:id="VBoxFactoryTwoContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                        <Pane fx:id="factoryTwo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="140.0" prefWidth="210.0" stylesheets="@style/BoardDetails.css">
+                            <children>
+                                <HBox fx:id="factoryTwoTopPart" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="210.0">
+                                    <children>
+                                        <Pane fx:id="factoryTwoTopLeft" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                        <Pane fx:id="factoryTwoTopRight" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="factoryTwoBottomPart" layoutX="1.0" layoutY="70.0" maxHeight="70.0" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="209.0">
+                                    <children>
+                                        <Pane fx:id="factoryTwoBottomLeft" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                        <Pane fx:id="factoryTwoBottomRight" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets left="40.0" top="5.0" />
+                            </VBox.margin>
+                        </Pane>
+                        <HBox.margin>
+                            <Insets bottom="4.0" />
+                        </HBox.margin>
+                    </VBox>
+
+                    <VBox fx:id="VBoxFactoryThreeContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                        <Pane fx:id="factoryThree" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="140.0" prefWidth="210.0" stylesheets="@style/BoardDetails.css">
+                            <children>
+                                <HBox fx:id="factoryThreeTopPart" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="210.0">
+                                    <children>
+                                        <Pane fx:id="factoryThreeTopLeft" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                        <Pane fx:id="factoryThreeTopRight" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="factoryThreeBottomPart" layoutX="1.0" layoutY="70.0" maxHeight="70.0" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="209.0">
+                                    <children>
+                                        <Pane fx:id="factoryThreeBottomLeft" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                        <Pane fx:id="factoryThreeBottomRight" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets left="40.0" top="5.0" />
+                            </VBox.margin>
+                        </Pane>
+                        <HBox.margin>
+                            <Insets bottom="4.0" />
+                        </HBox.margin>
+                    </VBox>
+
+                    <VBox fx:id="VBoxFactoryFourContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                        <Pane fx:id="factoryFour" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="140.0" prefWidth="210.0" stylesheets="@style/BoardDetails.css">
+                            <children>
+                                <HBox fx:id="factoryFourTopPart" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="210.0">
+                                    <children>
+                                        <Pane fx:id="factoryFourTopLeft" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                        <Pane fx:id="factoryFourTopRight" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="factoryFourBottomPart" layoutX="1.0" layoutY="70.0" maxHeight="70.0" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="209.0">
+                                    <children>
+                                        <Pane fx:id="factoryFourBottomLeft" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                        <Pane fx:id="factoryFourBottomRight" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets left="40.0" top="5.0" />
+                            </VBox.margin>
+                        </Pane>
+                        <HBox.margin>
+                            <Insets bottom="4.0" />
+                        </HBox.margin>
+                    </VBox>
+
+                    <VBox fx:id="VBoxFactoryFiveContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                        <Pane fx:id="factoryFive" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="140.0" prefWidth="210.0" stylesheets="@style/BoardDetails.css">
+                            <children>
+                                <HBox fx:id="factoryFiveTopPart" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="210.0">
+                                    <children>
+                                        <Pane fx:id="factoryFiveTopLeft" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                        <Pane fx:id="factoryFiveTopRight" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="factoryFiveBottomPart" layoutX="1.0" layoutY="70.0" maxHeight="70.0" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="209.0">
+                                    <children>
+                                        <Pane fx:id="factoryFiveBottomLeft" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="10.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                        <Pane fx:id="factoryFiveBottomRight" prefHeight="60.0" prefWidth="90.0">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Pane>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets left="40.0" top="5.0" />
+                            </VBox.margin>
+                        </Pane>
+                        <HBox.margin>
+                            <Insets bottom="5.0" />
+                        </HBox.margin>
+                    </VBox>
+
+                </children>
+            </HBox>
+
+
+            <HBox fx:id="hScoreTrack" maxWidth="1.7976931348623157E308" prefHeight="148.0" prefWidth="635.0" BorderPane.alignment="CENTER">
+                <children>
+                    <GridPane fx:id="playerOneScoreBoard" maxHeight="1.7976931348623157E308" maxWidth="600.0" minWidth="600.0" prefHeight="148.0" prefWidth="1251.0">
+                        <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <HBox.margin>
+                            <Insets left="20.0" />
+                        </HBox.margin>
+                    </GridPane>
+                    <VBox maxWidth="1.7976931348623157E308" minWidth="690.0" prefHeight="148.0" prefWidth="500.0">
+                        <children>
+                            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="690.0">
+                                <children>
+                                    <GridPane fx:id="playerTwoScoreBoard" maxWidth="600.0" minWidth="600.0" prefHeight="148.0" prefWidth="690.0">
+                                        <columnConstraints>
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        </columnConstraints>
+                                        <rowConstraints>
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        </rowConstraints>
+                                        <HBox.margin>
+                                            <Insets left="120.0" />
+                                        </HBox.margin>
+                                    </GridPane>
+                                </children>
+                            </HBox>
+                        </children>
+                        <HBox.margin>
+                            <Insets left="20.0" />
+                        </HBox.margin>
+                    </VBox>
+                </children>
+                <VBox.margin>
+                    <Insets left="15.0" />
+                </VBox.margin>
+            </HBox>
+        </VBox>
+    </top>
+    <center>
+        <HBox fx:id="patternLine" maxHeight="1.7976931348623157E308" BorderPane.alignment="CENTER">
+            <children>
+                <VBox fx:id="vPatternLinePlayground" maxHeight="1.7976931348623157E308" maxWidth="342.0" prefHeight="418.0" prefWidth="342.0">
+                    <children>
+                        <GridPane id="pOnePlayground_GP" fx:id="pOnePlayground_GP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="324.0" prefHeight="415.0" prefWidth="360.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Pane id="playground04" fx:id="playground04" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="4" GridPane.vgrow="NEVER" />
+                                <Pane id="playground14" fx:id="playground14" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                <Pane id="playground13" fx:id="playground13" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                <Pane id="playground24" fx:id="playground24" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                <Pane id="playground22" fx:id="playground22" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                <Pane id="playground23" fx:id="playground23" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                <Pane id="playground34" fx:id="playground34" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                <Pane id="playground33" fx:id="playground33" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                <Pane id="playground32" fx:id="playground32" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                <Pane id="playground31" fx:id="playground31" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                <Pane id="playground44" fx:id="playground44" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                                <Pane id="playground43" fx:id="playground43" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                <Pane id="playground42" fx:id="playground42" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                <Pane id="playground41" fx:id="playground41" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                <Pane id="playground40" fx:id="playground40" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.rowIndex="4" />
+                            </children>
+                        </GridPane>
+                    </children>
+                </VBox>
+                <VBox fx:id="vPatternLineStorage" maxHeight="1.7976931348623157E308" maxWidth="800.0" prefWidth="325.0">
+                    <children>
+                        <GridPane fx:id="pOneStorage_GP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="420.0" prefWidth="400.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Pane fx:id="storage04" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" />
+                                <Pane fx:id="storage03" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" />
+                                <Pane fx:id="storage02" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" />
+                                <Pane fx:id="storage01" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+                                <Pane fx:id="storage00" prefHeight="200.0" prefWidth="200.0" />
+                                <Pane fx:id="storage10" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                                <Pane fx:id="storage11" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Pane fx:id="storage12" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                <Pane fx:id="storage13" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                <Pane fx:id="storage14" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                <Pane fx:id="storage20" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                                <Pane fx:id="storage21" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <Pane fx:id="storage22" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                <Pane fx:id="storage23" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                <Pane fx:id="storage24" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                <Pane fx:id="storage30" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                                <Pane fx:id="storage31" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                <Pane fx:id="storage32" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                <Pane fx:id="storage33" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                <Pane fx:id="storage34" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                <Pane fx:id="storage40" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
+                                <Pane fx:id="storage41" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                <Pane fx:id="storage42" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                <Pane fx:id="storage43" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                <Pane fx:id="storage44" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                            </children>
+                        </GridPane>
+                    </children>
+                </VBox>
+                <VBox fx:id="playgroundPlayer2" maxWidth="340.0" minWidth="340.0" prefHeight="200.0" prefWidth="340.0">
+                    <children>
+                        <GridPane id="pTwoPlayground_GP" fx:id="pTwoPlayground_GP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="324.0" prefHeight="415.0" prefWidth="360.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Pane id="pTwoGround204" fx:id="pTwoGround204" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="4" />
+                                <Pane id="pTwoGround214" fx:id="pTwoGround214" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                <Pane id="pTwoGround213" fx:id="pTwoGround213" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                <Pane id="pTwoGround224" fx:id="pTwoGround224" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                <Pane id="pTwoGround222" fx:id="pTwoGround222" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                <Pane id="pTwoGround223" fx:id="pTwoGround223" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                <Pane id="pTwoGround234" fx:id="pTwoGround234" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                <Pane id="pTwoGround233" fx:id="pTwoGround233" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                <Pane id="pTwoGround232" fx:id="pTwoGround232" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                <Pane id="pTwoGround231" fx:id="pTwoGround231" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                <Pane id="pTwoGround244" fx:id="pTwoGround244" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                                <Pane id="pTwoGround243" fx:id="pTwoGround243" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                <Pane id="pTwoGround242" fx:id="pTwoGround242" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                <Pane id="pTwoGround241" fx:id="pTwoGround241" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                <Pane id="pTwoGround240" fx:id="pTwoGround240" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FCF8F8;" stylesheets="@style/BoardDetails.css" GridPane.rowIndex="4" />
+                            </children>
+                        </GridPane>
+                    </children>
+                </VBox>
+                <VBox fx:id="playerTwoStorage" prefHeight="417.0" prefWidth="398.0">
+                    <children>
+                        <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="420.0" prefWidth="400.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Pane fx:id="player2Storage04" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" />
+                                <Pane fx:id="player2Storage03" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" />
+                                <Pane fx:id="player2Storage02" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" />
+                                <Pane fx:id="player2Storage01" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+                                <Pane fx:id="player2Storage00" prefHeight="200.0" prefWidth="200.0" />
+                                <Pane fx:id="player2Storage10" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                                <Pane fx:id="player2Storage11" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Pane fx:id="player2Storage12" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                <Pane fx:id="player2Storage13" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                <Pane fx:id="player2Storage14" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                <Pane fx:id="player2Storage20" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                                <Pane fx:id="player2Storage21" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <Pane fx:id="player2Storage22" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                <Pane fx:id="player2Storage23" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                <Pane fx:id="player2Storage24" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                <Pane fx:id="player2Storage30" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                                <Pane fx:id="player2Storage31" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                <Pane fx:id="player2Storage32" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                <Pane fx:id="player2Storage33" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                <Pane fx:id="player2Storage34" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                <Pane fx:id="player2Storage40" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
+                                <Pane fx:id="player2Storage41" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                <Pane fx:id="player2Storage42" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                <Pane fx:id="player2Storage43" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                <Pane fx:id="player2Storage44" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                            </children>
+                        </GridPane>
+                    </children>
+                </VBox>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="5.0" top="10.0" />
+            </BorderPane.margin>
+        </HBox>
+    </center>
+    <bottom>
+        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="150.0" prefHeight="70.0" prefWidth="690.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox maxHeight="1.7976931348623157E308" maxWidth="950.0" prefHeight="145.0" prefWidth="700.0" stylesheets="@style/BoardDetails.css">
+                    <children>
+                        <TextField fx:id="chatMessageTextField" prefHeight="22.0" prefWidth="514.0" />
+                        <TextArea fx:id="chatTextArea" maxHeight="1.7976931348623157E308" prefHeight="119.0" prefWidth="782.0" />
+                    </children>
+                </VBox>
+                <VBox maxWidth="100.0" minWidth="50.0" prefHeight="65.0" prefWidth="100.0" stylesheets="@style/BoardDetails.css">
+                    <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="65.0" maxWidth="80.0" mnemonicParsing="false" onAction="#sendChatMessage" prefHeight="65.0" prefWidth="50.0" text="Send msg" textAlignment="CENTER" wrapText="true" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="145.0" prefWidth="217.0">
+                    <children>
+                        <MenuBar maxWidth="350.0" prefHeight="145.0" prefWidth="350.0">
+                            <menus>
+                                <Menu mnemonicParsing="false" text="Game">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#newGame" text="New" />
+                                        <MenuItem mnemonicParsing="false" onAction="#saveGame" text="Save" />
+                                        <MenuItem mnemonicParsing="false" onAction="#loadGame" text="Load" />
+                                        <MenuItem mnemonicParsing="false" onAction="#replayGame" text="Replay" />
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Documentation">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#createDocumentation" text="Create" />
+                                    </items>
+                                </Menu>
+                            </menus>
+                        </MenuBar>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </VBox>
+
+                <VBox maxWidth="376.0" prefHeight="145.0" prefWidth="374.0" stylesheets="@style/BoardDetails.css">
+                    <children>
+                        <Label fx:id="lastGameMoveLabel" text="The last game move" wrapText="true" />
+                    </children>
+                </VBox>
+                <!--            <VBox layoutX="820.0" layoutY="10.0" maxWidth="1000.0" prefHeight="65.0" prefWidth="1000.0" stylesheets="@style/BoardDetails.css">-->
+                <!--               <children>-->
+                <!--                  <TextField fx:id="chatMessageTextField_Two" prefHeight="30.0" prefWidth="564.0" />-->
+                <!--                  <TextArea fx:id="chatTextArea_Two" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" />-->
+                <!--               </children>-->
+                <!--            </VBox>-->
+            </children>
+            <padding>
+                <Insets bottom="5.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets left="10.0" />
+            </BorderPane.margin>
+        </HBox>
+    </bottom>
+</BorderPane>
